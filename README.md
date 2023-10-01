@@ -27,4 +27,12 @@ GPU RTX 6000
 
 Torch 2.0.1+cu117
 
+# Performance for inference part (s3fd+wav2lip)
+The main performance speed up comes from torch native GPU AI inference converted to TensorRT counterpart, with same float32 precision, and s3fd AI inference overlapping with its post-processing. 
+
+Please check the optimizing document for details.
+
+The performance speed up for inference part (s3fd+wav2lip) is 4.1X:
+
+![image](https://github.com/wujinzhong/Wav2Lip_TensorRT/assets/52945455/26f429c9-b47f-4016-ba52-84eda2fa23aa)
 
